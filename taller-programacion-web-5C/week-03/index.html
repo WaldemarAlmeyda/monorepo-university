@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Programación</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#que-es">¿Qué es?</a></li>
+                <li><a href="#lenguajes">Lenguajes</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Aprendiendo sobre programación</h2>
+
+            <p>
+                La programación es una herramienta que nos permite crear soluciones
+                utilizando computadoras y diferentes lenguajes de programación.
+            </p>
+        </section>
+
+        <section id="que-es">
+            <h2>¿Qué es la programación?</h2>
+
+            <p>
+                La programación es el proceso de crear instrucciones que una computadora
+                puede interpretar para resolver problemas.
+            </p>
+            <p>
+                Aprender a programar requiere
+                <strong>práctica y constancia</strong>,
+                pero también puede ser una actividad
+                <em>creativa y apasionante</em>.
+            </p>
+        </section>
+
+        <section id="lenguajes">
+            <h2>Lenguajes de programación</h2>
+
+            <p>
+                Existen muchos lenguajes de programación y cada uno puede ser utilizado
+                para diferentes tipos de proyectos.
+            </p>
+
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+            </ul>
+
+            <p>
+                Si quieres aprender más sobre programación, puedes visitar
+                <a href="https://developer.mozilla.org/es/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    MDN Web Docs
+                </a>.
+            </p>
+        </section>
+
+        <section id="formulario"> 
+            <h2>Cuéntame sobre tus intereses</h2> 
+                <form action="#" method="post"> 
+                    <div> 
+                        <label for="nombre">Nombre:</label> 
+                        <input type="text" id="nombre" name="nombre" required > 
+                    </div> 
+                    
+                    <div> 
+                        <label for="email">Email:</label> 
+                        <input type="email" id="email" name="email" required > 
+                    </div> 
+                    
+                    <div> 
+                        <label for="interes">Lenguaje de interés:</label> 
+                        <select id="interes" name="interes" required > 
+                            <option value="">Selecciona una opción</option> 
+                            <option value="python">Python</option> 
+                            <option value="javascript">JavaScript</option> 
+                            <option value="java">Java</option> 
+                            <option value="otro">Otro</option> 
+                        </select> 
+                    </div> 
+                    <div> 
+                        <label for="mensaje">Mensaje:</label> 
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." ></textarea> 
+                    </div> 
+                    <button type="submit">Enviar</button> 
+                </form> 
+            </section>
+
+            <section id="multimedia">
+
+                <h2>Programación en acción</h2>
+
+                <img
+                    src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+                    alt="Persona programando código en una computadora"
+                >
+
+                <!-- <video controls width="600">
+                    <source
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        type="video/mp4"
+                    >
+                    Tu navegador no soporta la reproducción de video.
+                </video> -->
+
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/NtfbWkxJTHw?si=UFlDIjcK6fDc1V23&amp;start=7" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+
+            </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 - Página sobre programación</p>
+    </footer>
+
+</body>
+</html>

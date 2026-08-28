@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    background-color: #f7f8fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+header h1 {
+    margin: 0 0 20px;
+    color: #4f6d7a;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+nav a {
+    color: #5f7d8a;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #34495e;
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #5a7184;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+#lenguajes {
+    
+    ul {
+        list-style: none;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    li {
+        background-color: #ffffff;
+        margin-bottom: 8px;
+        padding: 10px 15px;
+
+        border-left: 3px solid #a8c0ca;
+    }
+}
+
+#formulario {
+    background-color: #eef2f4;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#formulario h2 {
+    margin-top: 0;
+}
+
+#formulario form div {
+    margin-bottom: 20px;
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #526773;
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    
+    border: 1px solid #cbd5da;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    color: #333333;
+
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#formulario input:focus,
+#formulario select:focus,
+#formulario textarea:focus {
+    outline: none;
+    border-color: #8da9b5;
+}
+
+#formulario textarea {
+    resize: vertical;
+}
+
+#formulario button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #7895a1;
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#formulario button:hover {
+    background-color: #607d89;
+}
+
+#multimedia h2 {
+    margin-bottom: 20px;
+}
+
+#multimedia img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+}
+
+#multimedia iframe {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+
+    border-radius: 8px;
+}
+
+main a {
+    color: #527c8c;
+}
+
+footer {
+    padding: 20px 0;
+    border-top: 1px solid #e1e4e8;
+
+    color: #7a858c;
+    font-size: 0.9rem;
+}
