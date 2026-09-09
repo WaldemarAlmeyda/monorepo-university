@@ -2,6 +2,10 @@
 
 Sitio web estático para una cafetería ficticia llamada Café Raíces.
 
+## Página en vivo
+
+https://monorepo-university.vercel.app/
+
 ## Páginas
 
 - `index.html` — Acerca de nosotros (historia, misión, visión y valores).
