@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú de Café Raíces: bebidas calientes, bebidas frías, postres y snacks.">
+  <title>Nuestro menú | Café Raíces</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado__contenedor">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z"/>
+          <path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/>
+          <path d="M8 3c0 1-1 1-1 2s1 1 1 2"/>
+          <path d="M12 3c0 1-1 1-1 2s1 1 1 2"/>
+        </svg>
+        Café Raíces
+      </a>
+      <button class="nav__boton" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+    </div>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="index.html">Acerca de nosotros</a></li>
+        <li><a href="menu.html" aria-current="page">Nuestro menú</a></li>
+        <li><a href="reservas.html">Reservar una mesa</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Nuestro menú</h1>
+      <p>Todo nuestro café es tostado en casa. Los precios están en soles (S/) e incluyen impuestos.</p>
+    </section>
+
+    <section aria-labelledby="titulo-bebidas-calientes">
+      <h2 id="titulo-bebidas-calientes">Bebidas calientes</h2>
+      <table>
+        <caption>Bebidas calientes disponibles todo el día</caption>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Tamaño</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Espresso</td>
+            <td>Shot doble de nuestro blend de la casa</td>
+            <td>Único</td>
+            <td class="precio">S/ 7.50</td>
+          </tr>
+          <tr>
+            <td>Cappuccino</td>
+            <td>Espresso con leche vaporizada y espuma cremosa</td>
+            <td>Mediano / Grande</td>
+            <td class="precio">S/ 11.00 / S/ 13.50</td>
+          </tr>
+          <tr>
+            <td>Café americano</td>
+            <td>Espresso diluido en agua caliente, sabor suave</td>
+            <td>Mediano / Grande</td>
+            <td class="precio">S/ 9.00 / S/ 10.50</td>
+          </tr>
+          <tr>
+            <td>Chocolate caliente</td>
+            <td>Cacao peruano con leche entera y canela</td>
+            <td>Único</td>
+            <td class="precio">S/ 12.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="titulo-bebidas-frias">
+      <h2 id="titulo-bebidas-frias">Bebidas frías</h2>
+      <table>
+        <caption>Bebidas frías, ideales para el verano limeño</caption>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Tamaño</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cold brew</td>
+            <td>Café de extracción en frío durante 18 horas</td>
+            <td>Único</td>
+            <td class="precio">S/ 13.00</td>
+          </tr>
+          <tr>
+            <td>Frappé de vainilla</td>
+            <td>Café helado con leche, hielo y esencia de vainilla</td>
+            <td>Mediano / Grande</td>
+            <td class="precio">S/ 14.50 / S/ 16.50</td>
+          </tr>
+          <tr>
+            <td>Limonada de hierbabuena</td>
+            <td>Limón fresco, hierbabuena y un toque de miel</td>
+            <td>Único</td>
+            <td class="precio">S/ 10.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="titulo-postres">
+      <h2 id="titulo-postres">Postres</h2>
+      <table>
+        <caption>Postres horneados en nuestra cocina cada mañana</caption>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Apto vegano</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alfajor de maicena</td>
+            <td>Relleno de manjar blanco casero</td>
+            <td>No</td>
+            <td class="precio">S/ 5.50</td>
+          </tr>
+          <tr>
+            <td>Brownie de cacao</td>
+            <td>Con nueces y trozos de chocolate 70%</td>
+            <td>No</td>
+            <td class="precio">S/ 8.00</td>
+          </tr>
+          <tr>
+            <td>Cheesecake de maracuyá</td>
+            <td>Base de galleta con mermelada de maracuyá</td>
+            <td>No</td>
+            <td class="precio">S/ 12.00</td>
+          </tr>
+          <tr>
+            <td>Barra de avena y frutos secos</td>
+            <td>Endulzada con miel de abeja, sin lácteos</td>
+            <td>Sí</td>
+            <td class="precio">S/ 7.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="titulo-snacks">
+      <h2 id="titulo-snacks">Snacks salados</h2>
+      <table>
+        <caption>Opciones saladas para acompañar tu café</caption>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sándwich de pollo y palta</td>
+            <td>Pan de campo, pollo deshilachado y palta fresca</td>
+            <td class="precio">S/ 14.00</td>
+          </tr>
+          <tr>
+            <td>Croissant de jamón y queso</td>
+            <td>Croissant de mantequilla horneado con relleno gratinado</td>
+            <td class="precio">S/ 11.50</td>
+          </tr>
+          <tr>
+            <td>Empanada de espinaca y queso</td>
+            <td>Masa hojaldrada rellena, horneada al momento</td>
+            <td class="precio">S/ 8.50</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="hero">
+      <h2>¿Listo para venir?</h2>
+      <p>Reserva tu mesa con anticipación, sobre todo los fines de semana.</p>
+      <a href="reservas.html" class="boton">Reservar una mesa</a>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Café Raíces &middot; Jr. de la Unión 456, Barranco, Lima &middot; (01) 555-0134</p>
+    <p><a href="contacto.html">Escríbenos</a></p>
+  </footer>
+
+  <button id="volver-arriba" hidden aria-label="Volver arriba">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contáctanos o postula a Café Raíces.">
+  <title>Contáctanos | Café Raíces</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado__contenedor">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z"/>
+          <path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/>
+          <path d="M8 3c0 1-1 1-1 2s1 1 1 2"/>
+          <path d="M12 3c0 1-1 1-1 2s1 1 1 2"/>
+        </svg>
+        Café Raíces
+      </a>
+      <button class="nav__boton" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+    </div>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="index.html">Acerca de nosotros</a></li>
+        <li><a href="menu.html">Nuestro menú</a></li>
+        <li><a href="reservas.html">Reservar una mesa</a></li>
+        <li><a href="contacto.html" aria-current="page">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes una consulta, una sugerencia o quieres postular a trabajar con nosotros? Escríbenos.</p>
+    </section>
+
+    <section class="tarjeta" aria-labelledby="titulo-formulario-contacto">
+      <h2 id="titulo-formulario-contacto">Formulario de contacto</h2>
+      <form data-demo="true" onsubmit="return false;">
+
+        <fieldset>
+          <legend>Tus datos</legend>
+
+          <div class="campo">
+            <label for="nombre-contacto">Nombre completo<span class="obligatorio">*</span></label>
+            <input type="text" id="nombre-contacto" name="nombre" placeholder="Ej. Jorge Ramírez" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo-contacto">Correo electrónico<span class="obligatorio">*</span></label>
+            <input type="email" id="correo-contacto" name="correo" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="asunto">Motivo de tu mensaje<span class="obligatorio">*</span></label>
+            <select id="asunto" name="asunto" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="consulta-general">Consulta general</option>
+              <option value="reserva-grupal">Reserva para grupo grande / evento</option>
+              <option value="trabaja-con-nosotros">Trabaja con nosotros</option>
+              <option value="sugerencia">Sugerencia o reclamo</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <span>¿Cómo prefieres que te contactemos?<span class="obligatorio">*</span></span>
+            <div class="opciones-en-fila">
+              <label><input type="radio" name="medio-contacto" value="correo" checked required> Correo electrónico</label>
+              <label><input type="radio" name="medio-contacto" value="telefono"> Llamada telefónica</label>
+              <label><input type="radio" name="medio-contacto" value="whatsapp"> WhatsApp</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu mensaje</legend>
+
+          <div class="campo">
+            <label for="mensaje">Cuéntanos en qué te ayudamos<span class="obligatorio">*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="5" maxlength="500" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <p class="ayuda"><span id="contador-mensaje">0</span>/500 caracteres</p>
+          </div>
+
+          <div class="campo">
+            <label for="cv">Adjuntar CV (solo si postulas a un puesto)</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+          </div>
+
+          <div class="campo">
+            <label for="satisfaccion">Si ya nos visitaste, ¿cómo calificarías tu experiencia?</label>
+            <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="5" value="4">
+            <p class="ayuda">1 = muy mala &nbsp;·&nbsp; 5 = excelente</p>
+          </div>
+
+          <div class="campo">
+            <label>
+              <input type="checkbox" name="newsletter" value="si">
+              Quiero recibir noticias y promociones de Café Raíces por correo
+            </label>
+          </div>
+
+          <div class="campo">
+            <label>
+              <input type="checkbox" name="acepto-terminos" value="si" required>
+              He leído y acepto la política de privacidad<span class="obligatorio">*</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="boton">Enviar mensaje</button>
+
+        <p class="mensaje-confirmacion" role="status" hidden>
+          ¡Gracias por escribirnos!
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Café Raíces &middot; Jr. de la Unión 456, Barranco, Lima &middot; (01) 555-0134</p>
+    <p><a href="contacto.html">Escríbenos</a></p>
+  </footer>
+
+  <button id="volver-arriba" hidden aria-label="Volver arriba">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

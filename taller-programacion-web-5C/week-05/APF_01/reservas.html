@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserva una mesa en Café Raíces.">
+  <title>Reservar una mesa | Café Raíces</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado__contenedor">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z"/>
+          <path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/>
+          <path d="M8 3c0 1-1 1-1 2s1 1 1 2"/>
+          <path d="M12 3c0 1-1 1-1 2s1 1 1 2"/>
+        </svg>
+        Café Raíces
+      </a>
+      <button class="nav__boton" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+    </div>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="index.html">Acerca de nosotros</a></li>
+        <li><a href="menu.html">Nuestro menú</a></li>
+        <li><a href="reservas.html" aria-current="page">Reservar una mesa</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Reserva tu mesa</h1>
+      <p>Completa el formulario y te confirmaremos por teléfono o correo.</p>
+    </section>
+
+    <section class="tarjeta" aria-labelledby="titulo-formulario-reserva">
+      <h2 id="titulo-formulario-reserva">Datos de la reserva</h2>
+
+      <form data-demo="true" onsubmit="return false;">
+
+        <fieldset>
+          <legend>Datos de contacto</legend>
+
+          <div class="campo">
+            <label for="nombre">Nombre completo<span class="obligatorio">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. María Fernanda Torres" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico<span class="obligatorio">*</span></label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono<span class="obligatorio">*</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="9XX XXX XXX" pattern="[0-9 ]{7,12}" required>
+            <p class="ayuda">Solo números, sin guiones. Te llamaremos para confirmar.</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detalles de la reserva</legend>
+
+          <div class="campo">
+            <label for="fecha">Fecha<span class="obligatorio">*</span></label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+
+          <div class="campo">
+            <label for="hora">Hora<span class="obligatorio">*</span></label>
+            <input type="time" id="hora" name="hora" required>
+          </div>
+
+          <div class="campo">
+            <label for="personas">Cantidad de personas<span class="obligatorio">*</span></label>
+            <input type="number" id="personas" name="personas" min="1" max="12" value="2" required>
+          </div>
+
+          <div class="campo">
+            <label for="zona">Zona preferida</label>
+            <select id="zona" name="zona">
+              <option value="interior">Interior (con aire acondicionado)</option>
+              <option value="terraza">Terraza</option>
+              <option value="salon-privado">Salón privado (grupos grandes)</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <span>¿Es una ocasión especial?</span>
+            <div class="opciones-en-fila">
+              <label><input type="radio" name="ocasion" value="cumpleanos"> Cumpleaños</label>
+              <label><input type="radio" name="ocasion" value="aniversario"> Aniversario</label>
+              <label><input type="radio" name="ocasion" value="reunion-trabajo"> Reunión de trabajo</label>
+              <label><input type="radio" name="ocasion" value="ninguna" checked> Ninguna en particular</label>
+            </div>
+          </div>
+
+          <div class="campo">
+            <span>Servicios adicionales (opcional)</span>
+            <div class="opciones-en-fila">
+              <label><input type="checkbox" name="adicional" value="torta"> Torta de cumpleaños</label>
+              <label><input type="checkbox" name="adicional" value="decoracion"> Decoración especial</label>
+              <label><input type="checkbox" name="adicional" value="musica"> Música en vivo (solo salón privado)</label>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="comentarios">Comentarios o alergias alimentarias</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ej. Alergia a los frutos secos, silla para bebé, etc."></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="boton">Confirmar reserva</button>
+
+        <p class="mensaje-confirmacion" role="status" hidden>
+          ¡Gracias por la confirmación!
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Café Raíces &middot; Jr. de la Unión 456, Barranco, Lima &middot; (01) 555-0134</p>
+    <p><a href="contacto.html">Escríbenos</a></p>
+  </footer>
+
+  <button id="volver-arriba" hidden aria-label="Volver arriba">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

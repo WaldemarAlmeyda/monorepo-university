@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Raíces: cafetería de especialidad. Conoce nuestra historia, misión y valores.">
+  <title>Acerca de nosotros | Café Raíces</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="encabezado__contenedor">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z"/>
+          <path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/>
+          <path d="M8 3c0 1-1 1-1 2s1 1 1 2"/>
+          <path d="M12 3c0 1-1 1-1 2s1 1 1 2"/>
+        </svg>
+        Café Raíces
+      </a>
+
+      <button class="nav__boton" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__lista">
+        <li><a href="index.html" aria-current="page">Acerca de nosotros</a></li>
+        <li><a href="menu.html">Nuestro menú</a></li>
+        <li><a href="reservas.html">Reservar una mesa</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Café Raíces</h1>
+      <p>Un rincón cálido en medio de la ciudad, donde cada taza cuenta la historia
+        de los agricultores que la hicieron posible.</p>
+    </section>
+
+    <section aria-labelledby="titulo-historia">
+      <h2 id="titulo-historia">Nuestra historia</h2>
+      <p>
+        Café Raíces nació en 2016 como un pequeño puesto de café de grano en la
+        feria del barrio de Barranco, Lima. Con el tiempo, ese puesto se convirtió
+        en una cafetería con local propio, pero la idea original nunca cambió:
+        comprar directamente a pequeños agricultores peruanos y tostar el grano
+        nosotros mismos, en pequeños lotes, para asegurar frescura en cada taza.
+      </p>
+    </section>
+
+    <section aria-labelledby="titulo-mision">
+      <h2 id="titulo-mision">Misión y visión</h2>
+      <div class="rejilla-valores">
+        <article class="tarjeta">
+          <h3>Misión</h3>
+          <p>Servir café de especialidad de origen peruano en un ambiente
+            acogedor, apoyando el comercio justo con los agricultores que
+            cultivan cada grano.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Visión</h3>
+          <p>Ser la cafetería de referencia en Lima para quienes buscan
+            calidad, cercanía con el productor y un espacio cómodo para
+            trabajar, estudiar o conversar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-valores">
+      <h2 id="titulo-valores">Nuestros valores</h2>
+      <div class="rejilla-valores">
+        <article class="tarjeta">
+          <h3>🌱 Sostenibilidad</h3>
+          <p>Empaques compostables y relación directa con agricultores.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>☕ Calidad</h3>
+          <p>Tueste propio en pequeños lotes, cada semana.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>🤝 Comunidad</h3>
+          <p>Espacio abierto a artistas y emprendedores locales.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-horario">
+      <h2 id="titulo-horario">Horario de atención</h2>
+      <table>
+        <caption>Horario de atención de nuestro local en Barranco</caption>
+        <thead>
+          <tr>
+            <th scope="col">Día</th>
+            <th scope="col">Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes a viernes</td>
+            <td>7:00 a. m. – 8:00 p. m.</td>
+          </tr>
+          <tr>
+            <td>Sábados</td>
+            <td>8:00 a. m. – 9:00 p. m.</td>
+          </tr>
+          <tr>
+            <td>Domingos y feriados</td>
+            <td>8:00 a. m. – 6:00 p. m.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="hero">
+      <h2>¿Ya conoces nuestro menú?</h2>
+      <p>Descubre nuestras bebidas, postres y snacks, o reserva una mesa para tu próxima visita.</p>
+      <a href="menu.html" class="boton">Ver el menú</a>
+      <a href="reservas.html" class="boton">Reservar una mesa</a>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Café Raíces &middot; Jr. de la Unión 456, Barranco, Lima &middot; (01) 555-0134</p>
+    <p><a href="contacto.html">Escríbenos</a></p>
+  </footer>
+
+  <button id="volver-arriba" hidden aria-label="Volver arriba">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
